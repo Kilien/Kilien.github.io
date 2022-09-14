@@ -1,0 +1,1 @@
+const e={key:"v-43c6d2b1",path:"/tags/homebrew/",title:"homebrew | Tags",lang:"en-US",frontmatter:{title:"homebrew | Tags",layout:"Tags",blog:{type:"category",name:"homebrew",key:"tag"}},excerpt:"",headers:[],git:{},filePathRelative:null};export{e as data};

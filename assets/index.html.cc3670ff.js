@@ -1,0 +1,1 @@
+const e={key:"v-41ef69c4",path:"/tags/readme/",title:"readme | Tags",lang:"en-US",frontmatter:{title:"readme | Tags",layout:"Tags",blog:{type:"category",name:"readme",key:"tag"}},excerpt:"",headers:[],git:{},filePathRelative:null};export{e as data};

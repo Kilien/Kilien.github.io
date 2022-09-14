@@ -1,0 +1,1 @@
+const e={key:"v-a78b73b6",path:"/tags/ethers/",title:"ethers | Tags",lang:"en-US",frontmatter:{title:"ethers | Tags",layout:"Tags",blog:{type:"category",name:"ethers",key:"tag"}},excerpt:"",headers:[],git:{},filePathRelative:null};export{e as data};

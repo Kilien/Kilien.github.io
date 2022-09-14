@@ -1,0 +1,1 @@
+const t={key:"v-03ebee2f",path:"/tags/github/",title:"github | Tags",lang:"en-US",frontmatter:{title:"github | Tags",layout:"Tags",blog:{type:"category",name:"github",key:"tag"}},excerpt:"",headers:[],git:{},filePathRelative:null};export{t as data};

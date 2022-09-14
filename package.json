@@ -8,29 +8,31 @@
     "gen": "joplin-blog blog",
     "build": "yarn clean && vuepress-cli build blog --clean-cache",
     "serve": "serve blog/.vuepress/dist",
-    "deploy": "liuli-cli deploy",
+    "deploy": "git pull origin master && yarn blog && yarn build && liuli-cli deploy",
     "blog": "tsx .joplin-blog.ts"
   },
   "deploy": {
     "type": "gh-pages",
-    "dist": "blog/.vuepress/dist",
-    "dest": "blog/vuepress"
+    "dist": "blog/.vuepress/dist"
+  },
+  "engines": {
+    "node": ">=14"
   },
   "devDependencies": {
     "@liuli-util/cli": "^3.21.0",
     "@types/node": "^18.7.15",
-    "@vuepress/bundler-vite": "2.0.0-beta.46",
-    "@vuepress/cli": "2.0.0-beta.46",
-    "@vuepress/client": "2.0.0-beta.46",
+    "@vuepress/bundler-vite": "2.0.0-beta.49",
+    "@vuepress/cli": "2.0.0-beta.49",
+    "@vuepress/client": "2.0.0-beta.49",
     "joplin-blog": "^0.9.0",
     "oh-vue-icons": "^1.0.0-rc3",
     "rimraf": "^3.0.2",
     "sass-loader": "^13.0.0",
-    "serve": "^13.0.2",
+    "serve": "^14.0.1",
     "tsx": "^3.9.0",
     "typescript": "^4.8.2",
-    "vue": "^3.2.36",
-    "vuepress": "2.0.0-beta.46",
-    "vuepress-theme-gungnir": "2.0.0-alpha.24"
+    "vue": "^3.2.39",
+    "vuepress": "2.0.0-beta.49",
+    "vuepress-theme-gungnir": "^2.0.0-alpha.26"
   }
 }

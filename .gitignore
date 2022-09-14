@@ -25,3 +25,4 @@ node_modules/
 # Editor
 .vscode/
 .joplin-cache.json
+.joplin-blog.json

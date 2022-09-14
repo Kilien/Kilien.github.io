@@ -1,1 +1,0 @@
-const e={key:"v-2d8d3cc8",path:"/tags/vscode/",title:"vscode | Tags",lang:"en-US",frontmatter:{title:"vscode | Tags",layout:"Tags",blog:{type:"category",name:"vscode",key:"tag"}},excerpt:"",headers:[],git:{},filePathRelative:null};export{e as data};

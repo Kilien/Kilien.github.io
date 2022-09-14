@@ -1,1 +1,0 @@
-const t={key:"v-359ff642",path:"/tags/plugin/",title:"plugin | Tags",lang:"en-US",frontmatter:{title:"plugin | Tags",layout:"Tags",blog:{type:"category",name:"plugin",key:"tag"}},excerpt:"",headers:[],git:{},filePathRelative:null};export{t as data};

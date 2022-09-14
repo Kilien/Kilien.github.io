@@ -15,7 +15,7 @@ import {
   FaPaw,
   AiCv,
   BiInstagram,
-  AiGoogleScholarSquare
+  AiGoogleScholarSquare,
 } from "oh-vue-icons/icons";
 
 addIcons(
@@ -36,4 +36,4 @@ addIcons(
   AiGoogleScholarSquare
 );
 
-export default defineClientConfig({});
+export default defineClientConfig({})

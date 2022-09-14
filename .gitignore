@@ -26,3 +26,4 @@ node_modules/
 .vscode/
 .joplin-cache.json
 .joplin-blog.json
+package-lock.json

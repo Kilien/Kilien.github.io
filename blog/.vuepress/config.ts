@@ -1,6 +1,7 @@
 // .vuepress/config.js
-const { viteBundler } = require("@vuepress/bundler-vite");
-const { gungnirTheme } = require("vuepress-theme-gungnir");
+import { viteBundler } from "@vuepress/bundler-vite";
+import { gungnirTheme } from "vuepress-theme-gungnir";
+import { clipboardPlugin } from "vuepress-plugin-clipboard";
 
 const isProd = process.env.NODE_ENV === "production";
 module.exports = {
@@ -48,7 +49,6 @@ module.exports = {
   bundler: viteBundler(),
 
   theme: gungnirTheme({
-    repo: "Renovamen/blog.zxh.io",
     docsDir: "blog",
     docsBranch: "master",
 
@@ -63,8 +63,8 @@ module.exports = {
         github: "Kilien",
         twitter: "Linerzore",
         instagram: {
-          icon: "bi-instagram",  // 社交平台的图标
-          link: "https://www.instagram.com/kilienazure/"  // 主页链接
+          icon: "bi-instagram", // 社交平台的图标
+          link: "https://www.instagram.com/kilienazure/", // 主页链接
         },
         email: "kilienazure@gmail.com",
         rss: "/rss.xml",
@@ -172,4 +172,7 @@ module.exports = {
       <a href="https://github.com/Renovamen/vuepress-theme-gungnir" target="_blank">Gungnir</a>
     `,
   }),
+  plugins: [
+    clipboardPlugin({})
+  ]
 };

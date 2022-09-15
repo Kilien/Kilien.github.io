@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-f34616be","path":"/tags/metamask/","title":"metamask | Tags","lang":"en-US","frontmatter":{"title":"metamask | Tags","layout":"Tags","blog":{"type":"category","name":"metamask","key":"tag"}},"excerpt":"","headers":[],"git":{},"filePathRelative":null}');export{a as data};

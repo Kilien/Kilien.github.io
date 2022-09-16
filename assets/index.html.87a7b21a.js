@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-cd14fe74","path":"/tags/vue/","title":"vue | Tags","lang":"en-US","frontmatter":{"title":"vue | Tags","layout":"Tags","blog":{"type":"category","name":"vue","key":"tag"}},"excerpt":"","headers":[],"git":{},"filePathRelative":null}');export{e as data};

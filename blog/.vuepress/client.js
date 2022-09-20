@@ -1,5 +1,6 @@
 import { defineClientConfig } from "@vuepress/client";
 import { addIcons } from "oh-vue-icons";
+import Tools from "./components/Tools.vue";
 import {
   FaFortAwesome,
   FaSatelliteDish,
@@ -36,4 +37,8 @@ addIcons(
   AiGoogleScholarSquare
 );
 
-export default defineClientConfig({})
+export default defineClientConfig({
+  enhance({ app }) {
+    app.component("Tools", Tools);
+  },
+});

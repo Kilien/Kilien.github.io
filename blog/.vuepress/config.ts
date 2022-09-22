@@ -159,8 +159,8 @@ module.exports = {
         icon: "fa-satellite-dish",
       },
       {
-        text: "Test",
-        link: "/Test/",
+        text: "Forest",
+        link: "/Forest/",
         icon: "fa-satellite-dish",
       },
       {

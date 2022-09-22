@@ -1,6 +1,6 @@
 import { defineClientConfig } from "@vuepress/client";
 import { addIcons } from "oh-vue-icons";
-import Tools from "./components/Tools.vue";
+import ForestCanvas from "./components/Canvas.vue";
 import {
   FaFortAwesome,
   FaSatelliteDish,
@@ -39,6 +39,6 @@ addIcons(
 
 export default defineClientConfig({
   enhance({ app }) {
-    app.component("Tools", Tools);
+    app.component("ForestCanvas", ForestCanvas);
   },
 });

@@ -27,10 +27,22 @@ import Granim from "granim";
 import Common from "@theme/Common.vue";
 import PageHeader from "@theme/PageHeader.vue";
 import { loadVoLteResourceList } from "../utils/loadScript";
-import { usePageFrontmatter } from "@vuepress/client";
-import { ref, computed, onMounted } from "vue";
+import { ref, computed, onBeforeMount, onMounted } from "vue";
 
-(async () => {
+const pageInfo = computed(() => {
+  return {
+    subtitle: "lit. the trees long for peace but the wind will never cease",
+    bgImage: {
+      path: "/img/pages/bg-forest.jpg",
+      mask: "rgba(16, 106, 225 , 0.2)",
+    },
+  };
+});
+
+const canvas = ref("");
+
+// 异步加載cdn js,请求 speak 内容
+onBeforeMount(async () => {
   await loadVoLteResourceList();
   var head = document.getElementsByTagName("head")[0];
   var meta = document.createElement("meta");
@@ -53,19 +65,7 @@ import { ref, computed, onMounted } from "vue";
   } else {
     document.getElementById("tip").innerHTML = "ipseak依赖加载失败！";
   }
-})();
-
-const pageInfo = computed(() => {
-  return {
-    subtitle: "lit. the trees long for peace but the wind will never cease",
-    bgImage: {
-      path: "/img/pages/bg-forest.jpg",
-      mask: "rgba(16, 106, 225 , 0.2)",
-    },
-  };
 });
-
-const canvas = ref("");
 
 onMounted(() => {
   var granimInstance = new Granim({

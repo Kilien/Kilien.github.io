@@ -1,0 +1,13 @@
+import{_ as e,o as n,c as i,d as a}from"./app.f82e6432.js";const s={},t=a(`<h2 id="\u6DD8\u5B9D-npm-\u5730\u5740" tabindex="-1"><a class="header-anchor" href="#\u6DD8\u5B9D-npm-\u5730\u5740" aria-hidden="true">#</a> \u6DD8\u5B9D npm \u5730\u5740\uFF1A</h2><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>http://npm.taobao.org/
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>\u4E34\u65F6\u751F\u6548\uFF1A</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npm install \u8F6F\u4EF6\u540D --registry https://registry.npm.taobao.org
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>\u6C38\u4E45\u751F\u6548</strong></p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npm config set registry https://registry.npm.taobao.org
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>\u9A8C\u8BC1\uFF1A</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npm config get registry
+# OR
+npm info express
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="pip-\u6E05\u534E\u6E90" tabindex="-1"><a class="header-anchor" href="#pip-\u6E05\u534E\u6E90" aria-hidden="true">#</a> Pip \u6E05\u534E\u6E90</h2><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2 id="cnpm-\u4E0D\u63A8\u8350" tabindex="-1"><a class="header-anchor" href="#cnpm-\u4E0D\u63A8\u8350" aria-hidden="true">#</a> cnpm\uFF08\u4E0D\u63A8\u8350\uFF09\uFF1A</h2><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npm install -g --registry=https://registry.npm.taobao.org
+
+# \u4F7F\u7528
+
+cnpm install install express
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><a href="https://blog.csdn.net/weixin_43619065/article/details/98207250" target="_blank" rel="noopener noreferrer">npm \u66F4\u6362\u56FD\u5185\u6E90--\u89E3\u51B3 npm install \u6162\u7684\u95EE\u9898</a></p>`,13),r=[t];function d(l,c){return n(),i("div",null,r)}var o=e(s,[["render",d],["__file","index.html.vue"]]);export{o as default};

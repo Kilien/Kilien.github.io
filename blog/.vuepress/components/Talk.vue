@@ -2,7 +2,6 @@
   <Common>
     <template #page>
       <PageHeader :page-info="pageInfo" />
-      <canvas id="canvas-basic"></canvas>
       <main class="layout">
         <div id="tip" style="text-align: center">加载中...</div>
         <div class="talk-container">
@@ -33,8 +32,7 @@ const pageInfo = computed(() => {
   return {
     subtitle: "lit. the trees long for peace but the wind will never cease",
     bgImage: {
-      path: "/img/pages/bg-forest.jpg",
-      mask: "rgba(16, 106, 225 , 0.2)",
+      path: "/img/pages/wallhaven-frost.png",
     },
   };
 });
@@ -67,30 +65,6 @@ onBeforeMount(async () => {
   }
 });
 
-onMounted(() => {
-  var granimInstance = new Granim({
-    element: "#canvas-basic",
-    direction: "diagonal",
-    isPausedWhenNotInView: true,
-    // image: {
-    //   source: "/img/pages/bg-forest.jpg",
-    //   stretchMode: ["stretch", "stretch-if-bigger"],
-    //   blendingMode: "multiply",
-    // },
-    states: {
-      "default-state": {
-        gradients: [
-          ["#29323c", "#485563"],
-          ["#81ffef", "#f067b4"],
-          ["#77a1d3", "#79cbca", "#e684ae"],
-          ["#ff6e7f", "#bfe9ff"],
-          ["#fad7a1", "#e96d71"],
-        ],
-        transitionSpeed: 8000,
-      },
-    },
-  });
-});
 </script>
 <style lang="scss" scoped>
 #article-container .D-avatar {
@@ -113,6 +87,19 @@ onMounted(() => {
   left: 0;
 }
 
+:deep(.page-content) {
+  // background-image: linear-gradient(to right bottom, #2cd8d5, #33d6ea, #54d3f8, #79ceff, #9ac9ff, #b2c5ff, #c9c0fb, #debcf3, #ecb9e7, #f7b8db, #fdb8cf, #ffbac3);
+  background-image: linear-gradient(to right bottom, #e3fdf5, #cef6f5, #bbedf8, #afe3fc, #aed7ff, #bad3ff, #c9ceff, #dac8fd, #e7cffb, #f1d6fa, #f9def9, #ffe6fa);
+}
+
+:deep(.navbar) {
+  color: white;
+}
+
+:deep(.site-name) {
+  color: white;
+}
+
 .layout {
   margin: 0 auto;
   display: flex;
@@ -121,6 +108,7 @@ onMounted(() => {
   max-width: 1200px;
   width: 96%;
   z-index: 1;
+  
   @media (max-width: 750px) {
     padding: 20px 4px;
   }
@@ -137,9 +125,6 @@ onMounted(() => {
     z-index: 1;
   }
 }
-// :deep(.page-header) {
-//   z-index: 1;
-// }
 
 :deep(.footer) {
   width: 100%;

@@ -110,14 +110,14 @@ module.exports = {
           mask: "rgba(39, 170, 209, .25)",
         },
       },
-      links: {
-        subtitle:
-          "When you are looking at the stars, please put the brightest star shining night sky as my soul.",
-        bgImage: {
-          path: "/img/pages/links.png",
-          mask: "rgba(16, 106, 225 , 0.5)",
-        },
-      },
+      // links: {
+      //   subtitle:
+      //     "When you are looking at the stars, please put the brightest star shining night sky as my soul.",
+      //   bgImage: {
+      //     path: "/img/pages/links.png",
+      //     mask: "rgba(16, 106, 225 , 0.5)",
+      //   },
+      // },
     },
 
     themePlugins: {
@@ -153,11 +153,11 @@ module.exports = {
         link: "/tags/",
         icon: "fa-tag",
       },
-      {
-        text: "Links",
-        link: "/links/",
-        icon: "fa-satellite-dish",
-      },
+      // {
+      //   text: "Links",
+      //   link: "/links/",
+      //   icon: "fa-satellite-dish",
+      // },
       {
         text: "Talk",
         link: "/Talk/",

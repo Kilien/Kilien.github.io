@@ -3,8 +3,8 @@
     <template #page>
       <PageHeader :page-info="pageInfo" />
       <main class="layout">
-        <div id="tip" style="text-align: center">加载中...</div>
         <div class="talk-container">
+          <div id="tip" v-if="isTip" style="text-align: center">ipseak依赖加载失败！</div>
           <div id="ispeak"></div>
         </div>
       </main>
@@ -22,7 +22,7 @@
 </template>
 
 <script setup lang="ts">
-import Granim from "granim";
+// import Granim from "granim";
 import Common from "@theme/Common.vue";
 import PageHeader from "@theme/PageHeader.vue";
 import { loadVoLteResourceList } from "../utils/loadScript";
@@ -38,6 +38,7 @@ const pageInfo = computed(() => {
 });
 
 const canvas = ref("");
+const isTip = ref(true);
 
 // 异步加載cdn js,请求 speak 内容
 onBeforeMount(async () => {
@@ -47,8 +48,8 @@ onBeforeMount(async () => {
   meta.name = "referrer";
   meta.content = "no-referrer";
   head.appendChild(meta);
-  if (ispeak) {
-    ispeak
+  if (window?.ispeak) {
+    window.ispeak
       ?.init({
         el: "#ispeak",
         api: "https://kkapi-open-kilien.vercel.app/",
@@ -58,13 +59,10 @@ onBeforeMount(async () => {
       })
       .then(function () {
         console.log("ispeak 加载完成");
-        document.getElementById("tip").style.display = "none";
+        isTip.value = false;
       });
-  } else {
-    document.getElementById("tip").innerHTML = "ipseak依赖加载失败！";
   }
 });
-
 </script>
 <style lang="scss" scoped>
 #article-container .D-avatar {
@@ -89,7 +87,21 @@ onBeforeMount(async () => {
 
 :deep(.page-content) {
   // background-image: linear-gradient(to right bottom, #2cd8d5, #33d6ea, #54d3f8, #79ceff, #9ac9ff, #b2c5ff, #c9c0fb, #debcf3, #ecb9e7, #f7b8db, #fdb8cf, #ffbac3);
-  background-image: linear-gradient(to right bottom, #e3fdf5, #cef6f5, #bbedf8, #afe3fc, #aed7ff, #bad3ff, #c9ceff, #dac8fd, #e7cffb, #f1d6fa, #f9def9, #ffe6fa);
+  background-image: linear-gradient(
+    to right bottom,
+    #e3fdf5,
+    #cef6f5,
+    #bbedf8,
+    #afe3fc,
+    #aed7ff,
+    #bad3ff,
+    #c9ceff,
+    #dac8fd,
+    #e7cffb,
+    #f1d6fa,
+    #f9def9,
+    #ffe6fa
+  );
 }
 
 :deep(.navbar) {
@@ -104,11 +116,20 @@ onBeforeMount(async () => {
   margin: 0 auto;
   display: flex;
   flex: 1 auto;
+  flex-direction: column;
   padding: 40px 15px;
   max-width: 1200px;
   width: 96%;
   z-index: 1;
-  
+
+  @media (max-width: 1280px) {
+    width: 900px;
+  }
+
+  @media (max-width: 960px) {
+    width: 600px;
+  }
+
   @media (max-width: 750px) {
     padding: 20px 4px;
   }
@@ -116,13 +137,19 @@ onBeforeMount(async () => {
     width: 100%;
     padding: 50px 40px;
     @media (max-width: 750px) {
-      padding: 36px 14px;
+      padding: 0;
     }
     border-radius: 8px;
     background: hsla(0, 0%, 100%, 0.5);
     box-shadow: 0 3px 8px 6px rgba(7, 17, 27, 0.05);
     transition: all 0.3s;
     z-index: 1;
+
+    @media (max-width: 750px) {
+      :deep(.speak-body) {
+        padding: 0 20px;
+      }
+    }
   }
 }
 

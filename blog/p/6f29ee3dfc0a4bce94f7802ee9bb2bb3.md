@@ -5,21 +5,21 @@ subtitle: 6f29ee3dfc0a4bce94f7802ee9bb2bb3
 useHeaderImage: true
 headerImage: https://picsum.photos/seed/6f29ee3dfc0a4bce94f7802ee9bb2bb3/1920/1080
 headerMask: rgb(14, 21, 5, 0.2)
-title: PicGo+GitHub：打造自己的图床
-permalink: /p/6f29ee3dfc0a4bce94f7802ee9bb2bb3
 tags:
   - 图床
   - github
   - picgo
-date: 2021-04-02 15:30:00
-updated: 2022-09-13 15:48:00
+permalink: /p/6f29ee3dfc0a4bce94f7802ee9bb2bb3
+title: PicGo+GitHub：打造自己的图床
+date: 2021-04-02
+updated: 2022-09-13
 ---
 
 ## PicGo 介绍
 
 这是一款图片上传的工具，目前支持 SM.MS 图床，微博图床，七牛图床，腾讯云 COS，阿里云 OSS，Imgur，又拍云，`GitHub`等图床，未来将支持更多图床。
 
-解决问题的思路就是，将本地的文件，或者剪切板上面的截图发送图床，然后生成在线图片的链接，这样就可以让`Markdown`文档飞起来了，走到哪就可以用到哪 😊。
+解决问题的思路就是，将本地的文件，或者剪切板上面的截图发送图床，然后生成在线图片的链接，这样就可以让`Markdown`文档飞起来了，走到哪就可以用到哪😊。
 
 ![](https://cdn.jsdelivr.net/gh/KiLien/Pics@master/iShot/ishot-01.png)
 
@@ -67,32 +67,31 @@ updated: 2022-09-13 15:48:00
 
 ## GitHub
 
-Github 在图床里，毫无疑问是扮演一个“仓库”的角色。
+Github在图床里，毫无疑问是扮演一个“仓库”的角色。
 
 现在复习下步骤：
 
-- 在自己的个人账户的 settings 里，找到左侧最下方的 Developer settings。找到 Personal access tokens。在右侧点击 Generate new token。
+*   在自己的个人账户的settings里，找到左侧最下方的Developer settings。找到Personal access tokens。在右侧点击Generate new token。
 
-- 这里名字可以随便写，后面的范围把 repo 勾选即可。记下来生成好的 token。这一步的目的是生成一个能代表你身份的 token，
+*   这里名字可以随便写，后面的范围把repo勾选即可。记下来生成好的token。这一步的目的是生成一个能代表你身份的token，
+    然后交给picgo，使得它能替你上传图片，不用繁琐地再通过git commit 操作。
 
-然后交给 picgo，使得它能替你上传图片，不用繁琐地再通过 git commit 操作。
-
-- 在你的这个仓库里，点击 releases。接着点击旁边的 Draft New Release，最后点 Publish release。这一步是发布一个版本的意思，我们的 **jsDelivr** 会用到它。
+*   在你的这个仓库里，点击 releases。接着点击旁边的Draft New Release，最后点Publish release。这一步是发布一个版本的意思，我们的 **jsDelivr** 会用到它。
 
 > **jsDelivr**
-> 这是一个用于 **cdn** 加速的服务，神奇的地方在于，你不需要对它配置任何东西——对照，我们直接进入 vs picgo
+> 这是一个用于 **cdn** 加速的服务，神奇的地方在于，你不需要对它配置任何东西——对照，我们直接进入vs picgo
 
 ### PicGo
 
-这本身是一个方便图床上传的 GUI 工具，但是我这里推荐使用它的 vs code 插件版本。
+这本身是一个方便图床上传的GUI工具，但是我这里推荐使用它的vs code 插件版本。
 
-1. 在 VS Code 当中，搜索 PicGo 插件并安装。
-2. 打开 VS Code 的设置界面，搜索 picGo。
-3. 只需要把 **current** 这里的下拉选项改为 **github**
-4. 把 **Github:branch** 这里改成 **master**
-5. 把 **Github: Custom Url** 这里改成使用 **jsDelivr** 分发的仓库地址。即`https://cdn.jsdelivr.net/gh/你的github用户名/刚刚建的仓库名`，这样子我们以后访问图片就可以加快啦！
-6. 把 **Github: Repo** 改为 **github 用户名/仓库名**
-7. 把 **Github: Token** 改为刚刚在 Github 记录下来的 **token**
+1.  在VS Code 当中，搜索PicGo插件并安装。
+2.  打开VS Code的设置界面，搜索picGo。
+3.  只需要把 **current** 这里的下拉选项改为 **github**
+4.  把 **Github:branch** 这里改成 **master**
+5.  把 **Github: Custom Url** 这里改成使用 **jsDelivr** 分发的仓库地址。即`https://cdn.jsdelivr.net/gh/你的github用户名/刚刚建的仓库名`，这样子我们以后访问图片就可以加快啦！
+6.  把 **Github: Repo** 改为 **github用户名/仓库名**
+7.  把 **Github: Token** 改为刚刚在 Github 记录下来的 **token**
 
 ## 配置 PicGo
 
@@ -108,11 +107,11 @@ Github 在图床里，毫无疑问是扮演一个“仓库”的角色。
 
 ![](https://cdn.jsdelivr.net/gh/KiLien/Pics@master/iShot/ishot-09.png)
 
-- 设定仓库名的时候，按照 “账户名 / 仓库名“ 的格式填写
-- 分支名统一填写`master`
-- 将之前的`Token`黏贴在这里
-- 存储的路径可以按照我这样子写，就会在`repository`下创建一个`“xxx/xxx/xxxxx/”`文件夹，当然你可以自己定义你的文件夹名字。
-- 自定义域名的作用是在上传图片后成功后，`PicGo`会将 “自定义域名 + 上传的图片名” 生成的访问链接，放到剪切板上 `https://cdn.jsdelivr.net/gh/ 用户名 / RepositoryName / 分支名`，自定义域名需要按照这样去填写
+*   设定仓库名的时候，按照 “账户名 / 仓库名“ 的格式填写
+*   分支名统一填写`master`
+*   将之前的`Token`黏贴在这里
+*   存储的路径可以按照我这样子写，就会在`repository`下创建一个`“xxx/xxx/xxxxx/”`文件夹，当然你可以自己定义你的文件夹名字。
+*   自定义域名的作用是在上传图片后成功后，`PicGo`会将 “自定义域名 + 上传的图片名” 生成的访问链接，放到剪切板上 `https://cdn.jsdelivr.net/gh/ 用户名 / RepositoryName / 分支名`，自定义域名需要按照这样去填写
 
 ### 3. 快捷键及相关配置
 
@@ -126,7 +125,7 @@ Github 在图床里，毫无疑问是扮演一个“仓库”的角色。
 
 ### 4. 其他相关
 
-- [vs-picgo](https://github.com/Spades-S/vs-picgo)：`picgo`的`VSCode`版。
+*   [vs-picgo](https://github.com/Spades-S/vs-picgo)：`picgo`的`VSCode`版。
 
 ## 总结
 

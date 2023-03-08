@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-74bd0f2f","path":"/tags/solidity/","title":"solidity | Tags","lang":"en-US","frontmatter":{"title":"solidity | Tags","layout":"Tags","blog":{"type":"category","name":"solidity","key":"tag"}},"excerpt":"","headers":[],"git":{},"filePathRelative":null}');export{t as data};

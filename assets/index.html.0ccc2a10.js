@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-d7337092","path":"/tags/gsap/","title":"gsap | Tags","lang":"en-US","frontmatter":{"title":"gsap | Tags","layout":"Tags","blog":{"type":"category","name":"gsap","key":"tag"}},"excerpt":"","headers":[],"git":{},"filePathRelative":null}');export{a as data};

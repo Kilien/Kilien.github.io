@@ -1,15 +1,9 @@
-// .vuepress/config.js
 import { viteBundler } from "@vuepress/bundler-vite";
 import { gungnirTheme } from "vuepress-theme-gungnir";
 import { clipboardPlugin } from "vuepress-plugin-clipboard";
 
 const isProd = process.env.NODE_ENV === "production";
 module.exports = {
-  // base: '/blog/vuepress/',
-  // theme: '@vuepress/blog',
-  // themeConfig: {
-  //   // 请参考文档来查看所有可用的选项。
-  // },
   title: "Kilien Azure",
   description: "Interesting souls, unexpected encounters",
 

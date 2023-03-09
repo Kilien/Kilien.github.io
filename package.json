@@ -20,6 +20,9 @@
   "devDependencies": {
     "@liuli-util/cli": "^3.21.0",
     "@types/node": "^18.7.15",
+    "@mami/cli": "^0.5.2",
+    "@mami/plugin-joplin": "^0.5.3",
+    "@mami/plugin-local": "^0.5.4",
     "@vuepress/bundler-vite": "2.0.0-beta.49",
     "@vuepress/cli": "2.0.0-beta.49",
     "@vuepress/client": "2.0.0-beta.49",
@@ -35,9 +38,6 @@
     "vuepress-theme-gungnir": "^2.0.0-alpha.26"
   },
   "dependencies": {
-    "@mami/cli": "^0.5.2",
-    "@mami/plugin-joplin": "^0.5.3",
-    "@mami/plugin-local": "^0.5.4",
     "granim": "^2.0.0"
   }
 }

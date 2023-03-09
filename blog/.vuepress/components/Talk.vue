@@ -23,10 +23,12 @@
 
 <script setup lang="ts">
 // import Granim from "granim";
+// @ts-ignore
 import Common from "@theme/Common.vue";
+// @ts-ignore
 import PageHeader from "@theme/PageHeader.vue";
 import { loadVoLteResourceList } from "../utils/loadScript";
-import { ref, computed, onBeforeMount, onMounted } from "vue";
+import { ref, computed, onBeforeMount } from "vue";
 
 const pageInfo = computed(() => {
   return {
@@ -37,7 +39,6 @@ const pageInfo = computed(() => {
   };
 });
 
-const canvas = ref("");
 const isTip = ref(true);
 
 // 异步加載cdn js,请求 speak 内容

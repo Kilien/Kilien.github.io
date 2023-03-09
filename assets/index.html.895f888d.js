@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-a6b608e8","path":"/tags/joplin/","title":"joplin | Tags","lang":"en-US","frontmatter":{"title":"joplin | Tags","layout":"Tags","blog":{"type":"category","name":"joplin","key":"tag"}},"excerpt":"","headers":[],"git":{},"filePathRelative":null}');export{t as data};

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-cd26502e","path":"/tags/css/","title":"css | Tags","lang":"en-US","frontmatter":{"title":"css | Tags","layout":"Tags","blog":{"type":"category","name":"css","key":"tag"}},"excerpt":"","headers":[],"git":{},"filePathRelative":null}');export{t as data};

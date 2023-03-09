@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-cd17b0b0","path":"/tags/svg/","title":"svg | Tags","lang":"en-US","frontmatter":{"title":"svg | Tags","layout":"Tags","blog":{"type":"category","name":"svg","key":"tag"}},"excerpt":"","headers":[],"git":{},"filePathRelative":null}');export{t as data};

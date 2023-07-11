@@ -124,6 +124,7 @@ module.exports = {
         category: "Announcements",
         categoryId: "DIC_kwDOH9yn084CRVh2",
         theme: "light_protanopia",
+        mapping: "title",
         darkTheme: "https://blog.zxh.io/styles/giscus-dark.css",
       },
       mdPlus: {

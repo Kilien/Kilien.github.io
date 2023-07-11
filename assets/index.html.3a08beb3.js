@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-1afe9568","path":"/tags/deepl/","title":"deepl | Tags","lang":"en-US","frontmatter":{"title":"deepl | Tags","layout":"Tags","blog":{"type":"category","name":"deepl","key":"tag"}},"excerpt":"","headers":[],"git":{},"filePathRelative":null}');export{e as data};

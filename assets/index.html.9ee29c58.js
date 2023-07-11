@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-d54800a4","path":"/tags/yarn/","title":"yarn | Tags","lang":"en-US","frontmatter":{"title":"yarn | Tags","layout":"Tags","blog":{"type":"category","name":"yarn","key":"tag"}},"excerpt":"","headers":[],"git":{},"filePathRelative":null}');export{a as data};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-6fc49b73","path":"/tags/wordpress/","title":"wordpress | Tags","lang":"en-US","frontmatter":{"title":"wordpress | Tags","layout":"Tags","blog":{"type":"category","name":"wordpress","key":"tag"}},"excerpt":"","headers":[],"git":{},"filePathRelative":null}');export{e as data};

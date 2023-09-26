@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-cd1cb160","path":"/tags/nft/","title":"nft | Tags","lang":"en-US","frontmatter":{"title":"nft | Tags","layout":"Tags","blog":{"type":"category","name":"nft","key":"tag"}},"excerpt":"","headers":[],"git":{},"filePathRelative":null}');export{t as data};

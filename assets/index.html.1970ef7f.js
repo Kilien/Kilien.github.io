@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-2ab491f4","path":"/tags/%E8%B0%83%E7%A0%94/","title":"\u8C03\u7814 | Tags","lang":"en-US","frontmatter":{"title":"\u8C03\u7814 | Tags","layout":"Tags","blog":{"type":"category","name":"\u8C03\u7814","key":"tag"}},"excerpt":"","headers":[],"git":{},"filePathRelative":null}');export{t as data};
